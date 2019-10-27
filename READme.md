@@ -5,6 +5,7 @@ m2
 
 m3
 To merge the changes on the feature branch and the master branch
+<<<<<<< HEAD
 $ git merge featureBranchName
 
 $ git merge  --squash branch1
@@ -15,3 +16,6 @@ $ git commit -m 'feature branch1 and master merge'
 
 $ git log
 $ git status
+=======
+$ git merge featureBranchName
+>>>>>>> branch1
