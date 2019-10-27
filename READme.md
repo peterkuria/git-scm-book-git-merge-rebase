@@ -1,8 +1,17 @@
 # Git merge vs rebase
 
-# commit m2
+m1
+m2
 
-To commit a `single specific` file.
-git commit my.file -m "blah blah"
-git commit -m 'your comment' path/to/your/file.txt
+m3
+To merge the changes on the feature branch and the master branch
+$ git merge featureBranchName
 
+$ git merge  --squash branch1
+The above summarizes all the different commits all the changes in the feature branch in the last commit then
+merges the last commit with the latest commit in the master branch
+
+$ git commit -m 'feature branch1 and master merge'
+
+$ git log
+$ git status
